@@ -17,7 +17,7 @@
         double regPayRate = Double.parseDouble(request.getParameter("pay"));
         double preTaxDeduct = Double.parseDouble(request.getParameter("preTax"));
         double postTaxDeduct = Double.parseDouble(request.getParameter("postTax"));
-        double regHours, otHours, otPayRate, otPay, regPay, grossPay, taxablePay, taxAmount, postTaxPay, netPay;
+        double regHours, otHours=0, otPayRate=0, otPay, regPay, grossPay, taxablePay, taxAmount, postTaxPay, netPay;
         
         if(hoursWorked>40){
             regHours=40;
@@ -56,11 +56,11 @@
                 </tr>
                 <tr>
                     <td># Hours Overtime:</td>
-                    <td></td>
+                    <td><%= otHours %></td>
                 </tr>
                 <tr>
                     <td>Overtime Hourly Rate:</td>
-                    <td></td>
+                    <td><%= otPayRate %></td>
                 </tr>
                 <tr>
                     <td>Gross Pay:</td>
