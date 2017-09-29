@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Salary Info</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <%
         double hoursWorked = Double.parseDouble(request.getParameter("hours"));
@@ -40,7 +41,9 @@
         netPay=postTaxPay-postTaxDeduct;
         %>
     <body>
+        <div class="form">
         <h1>Salary Information</h1>
+        <hr>
         <table>
             <tbody>
                 <tr>
@@ -89,5 +92,6 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </body>
 </html>
