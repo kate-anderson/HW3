@@ -42,9 +42,9 @@
         %>
     <body>
         <div class="form">
-        <h1>Salary Information</h1>
+        <h1 align="center">Salary Information</h1>
         <hr>
-        <table>
+        <table class="results">
             <tbody>
                 <tr>
                     <td>Total Hours Worked:</td>

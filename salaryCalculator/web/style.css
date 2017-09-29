@@ -13,6 +13,7 @@ and open the template in the editor.
     color: darkblue;
     padding: 10px 10px 15px 10px;
     width: 300px;
+    height:auto;
     
     margin-right:auto;
     margin-left:auto;
@@ -26,3 +27,42 @@ hr{
     background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
     border:0;
 }
+.buttons{
+    margin-left: auto;
+    margin-right: auto;
+    width:116px;
+}
+#clear{
+    font-size: 15px;
+    border-radius: 12px;
+    color:darkblue;
+    background-color: lightblue;
+    border: 1px dotted gray;
+}
+#submit{
+    font-size: 15px;
+    border-radius: 12px;
+    color:darkblue;
+    background-color: lightblue;
+    border: 1px solid gray;
+}
+table, th, td{
+    border:1px solid gray;
+}
+table{
+    border-collapse: collapse;
+    padding:5px;
+}
+.results{
+    border: 1px dotted gray;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#info{
+    width:250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{float:right;}

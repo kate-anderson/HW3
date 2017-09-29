@@ -17,28 +17,30 @@
             <h1 align="center">Simple Salary Calculator</h1>
             <hr>
             <form name="salaryForm" action="results.jsp" method="post">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Hours Worked:</td>
-                            <td><input type="text" name="hours" value="" size="2" required></td>
-                        </tr>
-                        <tr>
-                            <td>Hourly Pay:</td>
-                            <td><input type="text" name="pay" value="" size="10" required></td>
-                        </tr>
-                        <tr>
-                            <td>Pre-tax Deduct:</td>
-                            <td><input type="text" name="preTax" value="" size="10" required></td>
-                        </tr>
-                        <tr>
-                            <td>Post-tax Deduct:</td>
-                            <td><input type="text" name="postTax" value="" size="10" required></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="info">
+                    <div>
+                        <label>Hours Worked:</label>
+                        
+                        <input type="text" name="hours" value="" size="10" required>
+                    </div>
+                    <div>
+                        <label>Hourly Pay:</label>
+                        <input type="text" name="pay" value="" size="10" required>
+                    </div>
+                    <div>
+                        <label>Pre-tax Deduct:</label>
+                        <input type="text" name="preTax" value="" size="10" required>
+                    </div>
+                    <div>
+                        <label>Post-tax Deduct:</label>
+                        <input type="text" name="postTax" value="" size="10" required>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <br>
                 <input type="reset" value="Clear" id="clear">
                 <input type="submit" value="Submit" id="submit">
+                </div>
             </form>
         </div>
     </body>
